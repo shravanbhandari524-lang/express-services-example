@@ -24,10 +24,10 @@ export const getById = async (id) => {
     throw err;
   }
 };
-export const update = async (id) => {
+export const update = async (id, student) => {
   try {
     const result = await pool.query(`
-        update student set 
+        update student set name = $1 , dob= $2 ,age = $3 ,contact = $4, address = $5 
         `);
   } catch (err) {
     throw err;
