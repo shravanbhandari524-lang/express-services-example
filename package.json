@@ -2,11 +2,11 @@
   "name": "servicepractice",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env src/server.js",
-    "dev": "node --env-file=.env ./node_modules/nodemon/bin/nodemon.js src/server.js"
+    "start": "node --env-file=.env index.js",
+    "dev": "node --env-file=.env ./node_modules/nodemon/bin/nodemon.js index.js"
   },
   "dependencies": {
     "express": "^5.2.1",
