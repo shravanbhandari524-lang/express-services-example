@@ -2,7 +2,7 @@ import express from "express";
 import * as teacher from "../03_controllers/teacher.controller.js";
 const router = express.Router();
 router.get("/test", (req, res) => {
-  return res.send("hit student api");
+  return res.send("hit teacher api");
 });
 router.get("/all", teacher.getAll);
 router.get("/:id", teacher.getById);
